@@ -1,0 +1,50 @@
+{
+  "name": "Cliente",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "documentoTipo": {
+      "type": "string"
+    },
+    "documento": {
+      "type": "number"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string"
+    },
+    "categoriaCliente": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "debe": {
+      "type": "number"
+    },
+    "haber": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

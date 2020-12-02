@@ -1,0 +1,45 @@
+{
+  "name": "Registro",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": [
+      "clientes"
+    ]
+  },
+  "properties": {
+    "tipo": {
+      "type": "number",
+      "required": true
+    },
+    "monto": {
+      "type": "number",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "productos": {
+      "type": "array",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientes": {
+      "type": "belongsTo",
+      "model": "Cliente",
+      "foreignKey": "idCliente"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

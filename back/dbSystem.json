@@ -1,0 +1,48 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Cliente": 2,
+    "Vendedor": 1,
+    "Venta": 1,
+    "Pago": 1,
+    "Product": 5,
+    "VentaProduct": 1,
+    "Cuota": 1,
+    "Evento": 4,
+    "Tarea": 1,
+    "Registro": 4
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Cliente": {
+      "1": "{\"codigo\":\"string\",\"nombre\":\"Donald Trump\",\"apellido\":\"\",\"documentoTipo\":\"string\",\"documento\":0,\"telefono\":\"+1 360 111 111\",\"direccion\":\"44 Street\",\"localidad\":\"Washington\",\"categoriaCliente\":\"string\",\"observaciones\":\"string\",\"debe\":0,\"haber\":0,\"id\":1}"
+    },
+    "Vendedor": {},
+    "Venta": {},
+    "Pago": {},
+    "Product": {
+      "2": "{\"nombre\":\"Fried chicken\",\"descripcion\":\"Big portion\",\"precio\":\"200\",\"rodado\":\"a\",\"color\":\"a\",\"stock\":1,\"id\":2}",
+      "4": "{\"nombre\":\"Pizza\",\"descripcion\":\"Cheese\",\"precio\":\"100\",\"rodado\":\"a\",\"color\":\"a\",\"stock\":1,\"id\":4}"
+    },
+    "VentaProduct": {},
+    "Cuota": {},
+    "Evento": {
+      "2": "{\"nombre\":\"Meeting\",\"fecha\":\"2020-12-01T20:10:00.000Z\",\"descripcion\":\"Tomorrow\",\"id\":2}",
+      "3": "{\"nombre\":\"Event\",\"fecha\":\"2020-12-17T20:21:00.000Z\",\"descripcion\":\"With Jane\",\"id\":3}"
+    },
+    "Tarea": {},
+    "Registro": {
+      "1": "{\"tipo\":0,\"monto\":700,\"fecha\":\"2020-11-30T20:22:23.973Z\",\"nombre\":\"Donald Trump\",\"productos\":[{\"nombre\":\"Pizza\",\"descripcion\":\"Double cheese\",\"precio\":\"150\",\"rodado\":\"a\",\"color\":\"a\",\"stock\":1,\"id\":1,\"quantity\":2},{\"nombre\":\"Fried chicken\",\"descripcion\":\"Big portion\",\"precio\":\"200\",\"rodado\":\"a\",\"color\":\"a\",\"stock\":1,\"id\":2,\"quantity\":2}],\"idCliente\":1,\"id\":1}",
+      "2": "{\"tipo\":1,\"monto\":300,\"fecha\":\"2020-11-30T20:22:42.996Z\",\"nombre\":\"Payday\",\"productos\":[{}],\"idCliente\":0,\"id\":2}",
+      "3": "{\"tipo\":0,\"monto\":150,\"fecha\":\"2020-12-02T01:16:23.101Z\",\"nombre\":\"Donald Trump\",\"productos\":[{\"nombre\":\"Pizza\",\"descripcion\":\"Double cheese\",\"precio\":\"150\",\"rodado\":\"a\",\"color\":\"a\",\"stock\":1,\"id\":1,\"quantity\":1}],\"idCliente\":1,\"id\":3}"
+    }
+  }
+}

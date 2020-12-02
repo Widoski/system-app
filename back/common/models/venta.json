@@ -1,0 +1,64 @@
+{
+  "name": "Venta",
+  "plural": "ventas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": "products"
+  },
+  "properties": {
+    "fecha": {
+      "type": "date"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "interes": {
+      "type": "number",
+      "required": true
+    },
+    "cuotas": {
+      "type": "number",
+      "required": true
+    },
+    "total": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vendedor": {
+      "type": "belongsTo",
+      "model": "Vendedor",
+      "foreignKey": ""
+    },
+    "cliente": {
+      "type": "belongsTo",
+      "model": "Cliente",
+      "foreignKey": ""
+    },
+    "products": {
+      "type": "hasAndBelongsToMany",
+      "model": "Product",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "cuota": {
+      "type": "hasMany",
+      "model": "Cuota",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

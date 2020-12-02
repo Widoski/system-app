@@ -1,0 +1,26 @@
+{
+  "name": "Pago",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha": {
+      "type": "date"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "importe": {
+      "type": "number"
+    },
+    "interes": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

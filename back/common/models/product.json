@@ -1,0 +1,47 @@
+{
+  "name": "Product",
+  "plural": "products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "rodado": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "categoria": {
+      "type": "belongsTo",
+      "model": "categoria",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

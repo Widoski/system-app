@@ -1,0 +1,52 @@
+{
+  "name": "Cuota",
+  "plural": "Cuotas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": "pagos"
+  },
+  "properties": {
+    "fechaVencimiento": {
+      "type": "date"
+    },
+    "importe": {
+      "type": "number",
+      "default": 0
+    },
+    "numeroCuota": {
+      "type": "number",
+      "default": 0
+    },
+    "montoTotal": {
+      "type": "number",
+      "default": 0
+    },
+    "montoActualizado": {
+      "type": "number",
+      "default": 0
+    },
+    "estaPaga": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "venta": {
+      "type": "belongsTo",
+      "model": "Venta",
+      "foreignKey": ""
+    },
+    "pagos": {
+      "type": "hasMany",
+      "model": "Pago",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

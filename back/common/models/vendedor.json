@@ -1,0 +1,22 @@
+{
+  "name": "Vendedor",
+  "plural": "vendedores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string",
+      "default": "area"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
